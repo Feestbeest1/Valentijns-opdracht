@@ -13,6 +13,7 @@ body {
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
+    border: 5px solid rgb(145, 54, 54); /* Toegevoegde rode rand */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 2;
@@ -40,6 +41,7 @@ button {
 
 button:hover {
     background-color: #e03e5d;
+    transform: scale(1.05);
 }
 
 .animatie-harten {
@@ -61,6 +63,37 @@ button:hover {
     clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 80%, 20% 100%, 0% 35%);
     animation: zweven 5s linear infinite;
 }
+
+.hart-knop {
+    background-color: #ff4d6d; /* Achtergrondkleur van de knop (rood) */
+    color: white; /* Tekstkleur */
+    border: none; /* Geen rand */
+    font-size: 18px; /* Tekstgrootte */
+    padding: 20px 40px; /* Padding om de knop groot genoeg te maken */
+    cursor: pointer;
+    text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
+    font-weight: bold; /* Maak de tekst vetgedrukt */
+    border-radius: 50%; /* Maakt de knop een beetje rond, helpt bij de hartvorm */
+    position: relative;
+    transition: all 0.3s ease;
+    clip-path: polygon(50% 0%, 0% 35%, 50% 100%, 100% 35%); /* Hartvorm */
+    display: inline-block; /* Zorgt ervoor dat de knop correct wordt weergegeven */
+    text-transform: uppercase; /* Zet de tekst om naar hoofdletters */
+}
+
+.hart-knop:hover {
+    background-color: #e03e5d; /* Donkerder rood bij hover */
+    transform: scale(1.1); /* Vergroot de knop een beetje bij hover */
+}
+
+.hart-knop:active {
+    transform: scale(0.95); /* Wanneer je op de knop klikt, verkleint de knop */
+}
+
+
+
+
+
 
 @keyframes zweven {
     0% { transform: translateY(0) scale(1); opacity: 1; }
