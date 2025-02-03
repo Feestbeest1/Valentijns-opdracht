@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentijnskaart</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>💖 Mijn Valentijnskaart 💖</h1>
+    <div class="kaart">
+        <p>Voor: <input type="text" id="naam" placeholder="Naam van je geliefde"></p>
+        <p>Jouw boodschap:</p>
+        <textarea id="boodschap" rows="4" cols="30" placeholder="Schrijf je liefdesboodschap..."></textarea>
+        <br><br>
+        <button onclick="toonKaart()">Toon de kaart</button>
+        <div class="boodschap" id="kaartBoodschap">
+            <p class="hartjes">❤️❤️❤️</p>
+            <p id="getoondeNaam"></p>
+            <p id="getoondeBoodschap"></p>
+        </div>
+    </div>
+    <script>
+        function toonKaart() {
+            var naam = document.getElementById('naam').value;
+            var boodschap = document.getElementById('boodschap').value;
+            document.getElementById('getoondeNaam').innerText = "Voor: " + naam;
+            document.getElementById('getoondeBoodschap').innerText = boodschap;
+            document.getElementById('kaartBoodschap').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
