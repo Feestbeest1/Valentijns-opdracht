@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #ffdde1;
+    background-color: #ff001e;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 .hartjes {
-    color: rgb(249, 249, 249);
+    color: rgb(255, 0, 0);
     font-size: 24px;
 }
 
