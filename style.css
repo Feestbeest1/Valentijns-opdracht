@@ -6,24 +6,28 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
 .kaart {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 300px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 2;
 }
+
 .hartjes {
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 24px;
 }
+
 .boodschap {
     display: none;
     margin-top: 20px;
 }
+
 button {
     background-color: #ff4d6d;
     color: white;
@@ -33,9 +37,11 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: #e03e5d;
 }
+
 .animatie-harten {
     position: fixed;
     top: 0;
@@ -45,6 +51,7 @@ button:hover {
     pointer-events: none;
     z-index: 1;
 }
+
 .hart {
     position: absolute;
     bottom: 0;
@@ -54,6 +61,7 @@ button:hover {
     clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 80%, 20% 100%, 0% 35%);
     animation: zweven 5s linear infinite;
 }
+
 @keyframes zweven {
     0% { transform: translateY(0) scale(1); opacity: 1; }
     100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
