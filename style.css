@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #ff001e;
+    background-color: #ffdde1;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,11 +8,7 @@ body {
 }
 
 .kaart {
-<<<<<<< HEAD
-    background: rgb(255, 0, 0);
-=======
     background: rgb(255, 255, 255);
->>>>>>> 2a54735da32bc2a05497b57943cc33d62f9c0180
     width: 300px;
     margin: 50px auto;
     padding: 20px;
