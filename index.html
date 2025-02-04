@@ -5,29 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentijnskaart</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body { margin: 0; overflow: hidden; }
+        #beginscherm { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background-color: #fce4ec;
+        }
+        #kaartContainer { display: none; }
+        #envelop { cursor: pointer; max-width: 100%; height: auto; }
+    </style>
 </head>
 <body>
-    <h1>💖 Mijn Valentijnskaart 💖</h1>
-    
-    <div class="kaart">
-        <p>Voor: <input type="texta" id="naam" placeholder="Naam van je geliefde"></p>
-        <p>Jouw boodschap:</p>
-        <textarea id="boodschap" rows="4" cols="30" placeholder="Schrijf je liefdesboodschap..."></textarea>
-        <br><br>
-        
-        <button id="fotoKnop" onclick="document.getElementById('fotoUpload').click()">Voeg een leuke foto toe🤗</button>
-        <input type="file" id="fotoUpload" accept="image/*" capture="environment" style="display: none;">
-        <br><br>
-        <img id="preview" src="" alt="Gekozen foto" style="max-width: 100%; display: none;">
-        
-        <button class="boodschap" id="kaartBoodschap">Toon kaart</button>
-        <p id="getoondeNaam"></p>
-        <p id="getoondeBoodschap"></p>
+    <!-- Beginscherm -->
+    <div id="beginscherm">
+        <img src="envelop.png" alt="Klik op de envelop om te openen" id="envelop" onclick="openKaart()">
     </div>
     
-    <div class="animatie-harten" id="hartenContainer"></div>
-    <button class="hart-knop" onclick="deelLink()">Deel</button>
-    <script src="script.js"></script>
+    <!-- Hoofdgedeelte van de website -->
+    <div id="kaartContainer">
+        <h1>💖 Mijn Valentijnskaart 💖</h1>
+        <div class="kaart">
+            <p>Voor: <input type="text" id="naam" placeholder="Naam van je geliefde"></p>
+            <p>Jouw boodschap:</p>
+            <textarea id="boodschap" rows="4" cols="30" placeholder="Schrijf je liefdesboodschap..."></textarea>
+            <br><br>
+            
+            <button id="fotoKnop" onclick="document.getElementById('fotoUpload').click()">Voeg een leuke foto toe</button>
+            <input type="file" id="fotoUpload" accept="image/*" capture="environment" style="display: none;">
+            <br><br>
+            <img id="preview" src="" alt="Gekozen foto" style="max-width: 100%; display: none;">
+            
+            <button class="boodschap" id="kaartBoodschap">Toon kaart</button>
+            <p id="getoondeNaam"></p>
+            <p id="getoondeBoodschap"></p>
+        </div>
+        
+        <div class="animatie-harten" id="hartenContainer"></div>
+        <button class="hart-knop" onclick="deelLink()">Deel</button>
+    </div>
+    
+    <script>
+        function openKaart() {
+            document.getElementById('beginscherm').style.display = 'none';
+            document.getElementById('kaartContainer').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
-
