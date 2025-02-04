@@ -18,6 +18,14 @@
     <!-- Hoofdgedeelte van de website -->
     <div id="kaartContainer">
         <h1>💖 Mijn Valentijnskaart 💖</h1>
+        <label for="layoutSelect">Kies een layout:</label>
+        <select id="layoutSelect" onchange="veranderLayout()">
+            <option value="layout1">Liefdevol Roze</option>
+            <option value="layout2">Romantisch Blauw</option>
+            <option value="layout3">Warm Paars</option>
+            <option value="layout4">Licht Roze</option>
+        </select>
+        
         <div class="kaart">
             <p>Voor: <input type="text" id="naam" placeholder="Naam van je geliefde"></p>
             <p>Jouw boodschap:</p>

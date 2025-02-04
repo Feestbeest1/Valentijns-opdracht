@@ -29,6 +29,19 @@ body {
     transition: 0.3s;
 }
 
+.layout1 { background-color: #fff0f6 !important; border-color: #ff4d6d; }
+.layout2 { background-color: #e3f2fd !important; border-color: #1976d2; }
+.layout3 { background-color: #ede7f6 !important; border-color: #673ab7; }
+.layout4 { background-color: #f3e5f5 !important; border-color: #9c27b0; }
+
+/* Achtergrondkleur voor het hele body-element */
+body.layout1 { background-color: #fff0f6; }
+body.layout2 { background-color: #e3f2fd; }
+body.layout3 { background-color: #ede7f6; }
+body.layout4 { background-color: #f3e5f5; }
+
+
+
 #fotoKnop:hover {
     background-color: #e03e5d;
 }
