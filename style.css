@@ -19,9 +19,9 @@ body {
     z-index: 2;
 }
 
-.hartjes {
-    color: rgb(255, 0, 0);
-    font-size: 24px;
+.foto{
+    width: 200px;
+    height: 200px;
 }
 
 .boodschap {
@@ -29,20 +29,6 @@ body {
     margin-top: 20px;
 }
 
-button {
-    background-color: #ff4d6d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-    button:hover {
-        background-color: #e03e5d;
-        transform: scale(1.05);
-}
 
 .animatie-harten {
     position: fixed;
@@ -56,6 +42,7 @@ button {
 
 
 .hart-knop {
+    border: none;   
     color: white; /* Tekstkleur */
     font-size: 30px; /* Tekstgrootte */
     cursor: pointer;
@@ -72,8 +59,9 @@ button {
 }
 
 .hart-knop:hover {
-    background-color: #ffdde1;; /* Donkerder rood bij hover */
     transform: scale(1.1); /* Vergroot de knop een beetje bij hover */
+    background-color:
+    #ffdde1;; /* Donkerder rood bij hover */
 }
 
 .hart-knop:active {
