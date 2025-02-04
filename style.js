@@ -12,7 +12,7 @@ function maakHart() {
     hart.classList.add('hart');
     hart.style.left = Math.random() * 100 + 'vw';
     hart.style.animationDuration = Math.random() * 3 + 2 + 's';
-    document.getElementById('ballonContainer').appendChild(hart);
+    document.getElementById('hartenContainer').appendChild(hart);
     setTimeout(() => {
         hart.remove();
     }, 5000);
@@ -41,18 +41,5 @@ function deelLink() {
         window.open(whatsappURL, "_blank");
     }
 }
-
-document.getElementById('fotoUpload').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const preview = document.getElementById('preview');
-            preview.src = e.target.result;
-            preview.style.display = 'block';
-        };
-        reader.readAsDataURL(file);
-    }
-});
 
 setInterval(maakHart, 500);
