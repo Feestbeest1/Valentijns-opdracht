@@ -47,12 +47,25 @@ button:hover {
 .hart {
     position: absolute;
     bottom: 0;
-    width: 40px;
-    height: 40px;
-    background-color: rgb(252, 240, 12);
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    width: 100px;
+    height: 100px;
+    background-image: url('pijlman.png');  /* Vervang dit door het pad van je afbeelding */
+    background-size: cover;  /* Zorgt ervoor dat de afbeelding goed wordt aangepast aan het element */
+    background-position: center;  /* Zorgt ervoor dat de afbeelding goed uitgelijnd is */
     animation: zweven 5s linear infinite;
 }
+
+@keyframes zweven {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
 
 
 
