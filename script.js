@@ -12,7 +12,7 @@ function maakHart() {
     hart.classList.add('hart');
     hart.style.left = Math.random() * 100 + 'vw';
     hart.style.animationDuration = Math.random() * 3 + 2 + 's';
-    document.getElementById('ballonContainer').appendChild(hart);
+    document.getElementById('hartenContainer').appendChild(hart);
     setTimeout(() => {
         hart.remove();
     }, 5000);
