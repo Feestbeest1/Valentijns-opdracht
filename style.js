@@ -42,4 +42,6 @@ function deelLink() {
     }
 }
 
+
+
 setInterval(maakHart, 500);
