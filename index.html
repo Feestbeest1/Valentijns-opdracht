@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentijnskaart</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <h1>💖 Mijn Valentijnskaart 💖</h1>
     
     <div class="kaart">
-        <p>Voor: <input type="text" id="naam" placeholder="Naam van je geliefde"></p>
+        <p>Voor: <input type="texta" id="naam" placeholder="Naam van je geliefde"></p>
         <p>Jouw boodschap:</p>
         <textarea id="boodschap" rows="4" cols="30" placeholder="Schrijf je liefdesboodschap..."></textarea>
         <br><br>
         
-        <button id="fotoKnop" onclick="document.getElementById('fotoUpload').click()">Voeg een leuke foto toe</button>
+        <button id="fotoKnop" onclick="document.getElementById('fotoUpload').click()">Voeg een leuke foto toe🤗</button>
         <input type="file" id="fotoUpload" accept="image/*" capture="environment" style="display: none;">
         <br><br>
         <img id="preview" src="" alt="Gekozen foto" style="max-width: 100%; display: none;">
@@ -26,9 +25,9 @@
         <p id="getoondeBoodschap"></p>
     </div>
     
-    <div class="animatie-harten" id="ballonContainer"></div>
-    
-    <script>
-    </script>
+    <div class="animatie-harten" id="hartenContainer"></div>
+    <button class="hart-knop" onclick="deelLink()">Deel</button>
+    <script src="script.js"></script>
 </body>
 </html>
+
