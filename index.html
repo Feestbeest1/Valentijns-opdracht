@@ -14,12 +14,15 @@
         <p>Jouw boodschap:</p>
         <textarea id="boodschap" rows="4" cols="30" placeholder="Schrijf je liefdesboodschap..."></textarea>
         <br><br>
-        <button class="foto" id= "foto"> Voeg een leuke foto toe</button>
         
-        <button class="boodschap" id="kaartBoodschap"></button>
-            <p id="getoondeNaam"></p>
-            <p id="getoondeBoodschap"></p>
-        </div>
+        <button id="fotoKnop" onclick="document.getElementById('fotoUpload').click()">Voeg een leuke foto toe</button>
+        <input type="file" id="fotoUpload" accept="image/*" capture="environment" style="display: none;">
+        <br><br>
+        <img id="preview" src="" alt="Gekozen foto" style="max-width: 100%; display: none;">
+        
+        <button class="boodschap" id="kaartBoodschap">Toon kaart</button>
+        <p id="getoondeNaam"></p>
+        <p id="getoondeBoodschap"></p>
     </div>
     
     <div class="animatie-harten" id="hartenContainer"></div>
