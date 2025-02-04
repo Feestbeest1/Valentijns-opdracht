@@ -55,4 +55,9 @@ document.getElementById('fotoUpload').addEventListener('change', function(event)
     }
 });
 
+function openKaart() {
+    document.getElementById('beginscherm').style.display = 'none';
+    document.getElementById('kaartContainer').style.display = 'block';
+}
+
 setInterval(maakHart, 500);

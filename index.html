@@ -6,16 +6,7 @@
     <title>Valentijnskaart</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body { margin: 0; overflow: hidden; }
-        #beginscherm { 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            background-color: #fce4ec;
-        }
-        #kaartContainer { display: none; }
-        #envelop { cursor: pointer; max-width: 100%; height: auto; }
+
     </style>
 </head>
 <body>
@@ -45,13 +36,6 @@
         
         <div class="animatie-harten" id="hartenContainer"></div>
         <button class="hart-knop" onclick="deelLink()">Deel</button>
-    </div>
-    
-    <script>
-        function openKaart() {
-            document.getElementById('beginscherm').style.display = 'none';
-            document.getElementById('kaartContainer').style.display = 'block';
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
