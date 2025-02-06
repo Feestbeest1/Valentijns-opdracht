@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Dancing Script', cursive;
 }
 .kaart {
     background: rgb(255, 255, 255);
@@ -161,13 +162,13 @@ p {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 600px; /* Ruimte tussen tekst en envelop */
-    margin-left: 70px; /* Zorgt ervoor dat het gecentreerd blijft */
+    margin-left: 90px; /* Zorgt ervoor dat het gecentreerd blijft */
 }
 
 #envelop {
     width: 700px; /* Pas de grootte van de afbeelding aan */
     cursor: pointer;
-    margin-left: -460px;
+    margin-left: -500px;
 }
 
 /* Voor kleine schermen (mobiel) */
@@ -201,4 +202,14 @@ p {
   }
   
   
+  textarea {
+    width: 100%;
+    max-width: 280px; /* Optioneel: Beperk de maximale breedte */
+    height: 100px; /* Stel een vaste hoogte in */
+    resize: none; /* Voorkomt vergroten/verkleinen */
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
 
