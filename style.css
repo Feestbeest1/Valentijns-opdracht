@@ -31,16 +31,18 @@ body {
     transition: 0.3s;
 }
 
-.layout1 { background-color: #fff0f6 !important; border-color: #ff4d6d; }
-.layout2 { background-color: #e3f2fd !important; border-color: #1976d2; }
-.layout3 { background-color: #ede7f6 !important; border-color: #673ab7; }
-.layout4 { background-color: #f3e5f5 !important; border-color: #9c27b0; }
+.layout1 .kaart { background-color: #ffdde1 !important; border-color: #ff4d6d !important; }
+.layout2 .kaart { background-color: #bbdefb !important; border-color: #1976d2 !important; }
+.layout3 .kaart { background-color: #d1c4e9 !important; border-color: #673ab7 !important; }
+.layout4 .kaart { background-color: #f8bbd0 !important; border-color: #9c27b0 !important; }
+
 
 /* Achtergrondkleur voor het hele body-element */
-body.layout1 { background-color: #fff0f6; }
-body.layout2 { background-color: #e3f2fd; }
-body.layout3 { background-color: #ede7f6; }
-body.layout4 { background-color: #f3e5f5; }
+body.layout1 { background-color: #fff0f6 !important; }
+body.layout2 { background-color: #e3f2fd !important; }
+body.layout3 { background-color: #ede7f6 !important; }
+body.layout4 { background-color: #f3e5f5 !important; }
+
 
 
 
@@ -51,6 +53,7 @@ body.layout4 { background-color: #f3e5f5; }
 .boodschap {
     display: none;
     margin-top: 20px;
+    
 }
 
 
@@ -83,11 +86,12 @@ button:hover {
     color: white; /* Tekstkleur */
     font-size: 30px; /* Tekstgrootte */
     cursor: pointer;
-    background-color: #ffdde1;
+    background-color: #ffffff;
     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
     font-weight: bold; /* Maak de tekst vetgedrukt */
     position: relative;
     transition: all 0.3s ease;
+    border: 5px solid rgb(0, 0, 0);
     width: 200px;
     height: 200px;
     background-position: center center;
@@ -98,7 +102,7 @@ button:hover {
 .hart-knop:hover {
     transform: scale(1.1); /* Vergroot de knop een beetje bij hover */
     background-color:
-    #ffdde1;; /* Donkerder rood bij hover */
+    #ffffff;; /* Donkerder rood bij hover */
 }
 
 .hart-knop:active {
@@ -136,6 +140,8 @@ body { margin: 0; overflow: hidden; }
     animation: zweven 5s linear infinite;
 }
 
+
+
 @keyframes zweven {
     0% {
         transform: translateY(0);
@@ -158,6 +164,7 @@ p {
     0% { transform: translateY(0) scale(1); opacity: 1; }
     100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
 }
+
 #tekst {
     font-size: 24px;
     font-weight: bold;
