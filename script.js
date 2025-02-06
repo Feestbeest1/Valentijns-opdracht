@@ -60,4 +60,18 @@ function openKaart() {
     document.getElementById('kaartContainer').style.display = 'block';
 }
 
+function veranderLayout() {
+    var kaart = document.getElementById('kaart');
+    var gekozenLayout = document.getElementById('layoutSelect').value;
+    
+    // Verwijder alle andere layout-klassen
+    kaart.classList.remove("layout1", "layout2", "layout3", "layout4");
+
+    // Voeg de nieuwe geselecteerde klasse toe
+    kaart.classList.add(gekozenLayout);
+}
+
+
+
+
 setInterval(maakHart, 500);
