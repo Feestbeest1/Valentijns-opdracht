@@ -31,17 +31,17 @@ body {
     transition: 0.3s;
 }
 
-.layout1 .kaart { background-color: #ffdde1 !important; border-color: #ff4d6d !important; }
+.layout1 .kaart { background-color: #ffdde1 !important; border-color: #5d0043 !important; }
 .layout2 .kaart { background-color: #bbdefb !important; border-color: #1976d2 !important; }
-.layout3 .kaart { background-color: #d1c4e9 !important; border-color: #673ab7 !important; }
-.layout4 .kaart { background-color: #f8bbd0 !important; border-color: #9c27b0 !important; }
+.layout3 .kaart { background-color: #d1c4e9 !important; border-color: #473f53 !important; }
+.layout4 .kaart { background-color: #fbe0ff !important; border-color: #ff95f6 !important; }
 
 
 /* Achtergrondkleur voor het hele body-element */
-body.layout1 { background-color: #fff0f6 !important; }
-body.layout2 { background-color: #e3f2fd !important; }
-body.layout3 { background-color: #ede7f6 !important; }
-body.layout4 { background-color: #f3e5f5 !important; }
+body.layout1 { background-color: #ff6dc5 !important; }
+body.layout2 { background-color: #93c4e7 !important; }
+body.layout3 { background-color: #8d5bd7 !important; }
+body.layout4 { background-color: #cb83d5 !important; }
 
 
 
