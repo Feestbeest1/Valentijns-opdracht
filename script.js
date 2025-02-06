@@ -56,6 +56,8 @@ document.getElementById('fotoUpload').addEventListener('change', function(event)
 });
 
 function openKaart() {
+    audio.play();
+
     document.getElementById('beginscherm').style.display = 'none';
     document.getElementById('kaartContainer').style.display = 'block';
 }
@@ -70,6 +72,12 @@ function veranderLayout() {
     // Voeg de nieuwe geselecteerde klasse toe
     kaart.classList.add(gekozenLayout);
 }
+
+var audio = new Audio('music.mp3'); // Vervang 'geluid.mp3' door je eigen bestand
+
+
+
+
 
 
 
