@@ -91,13 +91,14 @@ button:hover {
     font-weight: bold; /* Maak de tekst vetgedrukt */
     position: relative;
     transition: all 0.3s ease;
-    border: 5px solid rgb(0, 0, 0);
     width: 200px;
     height: 200px;
     background-position: center center;
     background-image: url(heart.png);
     background-size: cover;
+    z-index: 3; /* Voeg deze regel toe */
 }
+
 
 .hart-knop:hover {
     transform: scale(1.1); /* Vergroot de knop een beetje bij hover */

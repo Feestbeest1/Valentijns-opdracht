@@ -75,6 +75,27 @@ function veranderLayout() {
     kaart.classList.add(gekozenLayout); 
     kaarttop.classList.add(gekozenLayout);
     body.classList.add(gekozenLayout);
+
+    // Werk de achtergrondkleur van het hart bij
+    updateHartAchtergrond();
+}
+
+window.onload = function() {
+    updateHartAchtergrond();
+};
+
+
+
+function updateHartAchtergrond() {
+    // Haal de huidige achtergrondkleur van het body-element op
+    var body = document.body;
+    var hartKnop = document.querySelector('.hart-knop');
+
+    // Verkrijg de achtergrondkleur van het body-element (de kleur van de gekozen layout)
+    var achtergrondKleur = getComputedStyle(body).backgroundColor;
+
+    // Pas de achtergrondkleur van het hart aan
+    hartKnop.style.backgroundColor = achtergrondKleur;
 }
 
 
