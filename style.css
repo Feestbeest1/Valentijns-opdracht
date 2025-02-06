@@ -133,8 +133,7 @@ body { margin: 0; overflow: hidden; }
     background-position: center;  /* Zorgt ervoor dat de afbeelding goed uitgelijnd is */
     animation: zweven 5s linear infinite;
 }
-<<<<<<<<< Temporary merge branch 1
-=========
+
 
 @keyframes zweven {
     0% {
@@ -155,4 +154,4 @@ body { margin: 0; overflow: hidden; }
     0% { transform: translateY(0) scale(1); opacity: 1; }
     100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
 }
->>>>>>>>> Temporary merge branch 2
+
