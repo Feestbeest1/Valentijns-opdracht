@@ -72,7 +72,7 @@ function veranderLayout() {
     body.classList.remove("layout1", "layout2", "layout3", "layout4");
 
     // Voeg de nieuwe geselecteerde klasse toe
-    kaart.classList.add(gekozenLayout);
+    kaart.classList.add(gekozenLayout); 
     kaarttop.classList.add(gekozenLayout);
     body.classList.add(gekozenLayout);
 }

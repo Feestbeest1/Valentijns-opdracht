@@ -85,11 +85,12 @@ button:hover {
     color: white; /* Tekstkleur */
     font-size: 30px; /* Tekstgrootte */
     cursor: pointer;
-    background-color: #ffdde1;
+    background-color: #ffffff;
     text-align: center; /* Zorgt ervoor dat de tekst gecentreerd is */
     font-weight: bold; /* Maak de tekst vetgedrukt */
     position: relative;
     transition: all 0.3s ease;
+    border: 5px solid rgb(0, 0, 0);
     width: 200px;
     height: 200px;
     background-position: center center;
@@ -100,7 +101,7 @@ button:hover {
 .hart-knop:hover {
     transform: scale(1.1); /* Vergroot de knop een beetje bij hover */
     background-color:
-    #ffdde1;; /* Donkerder rood bij hover */
+    #ffffff;; /* Donkerder rood bij hover */
 }
 
 .hart-knop:active {
