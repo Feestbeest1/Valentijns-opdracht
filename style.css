@@ -29,10 +29,11 @@ body {
     transition: 0.3s;
 }
 
-.layout1 { background-color: #fff0f6 !important; border-color: #ff4d6d; }
-.layout2 { background-color: #e3f2fd !important; border-color: #1976d2; }
-.layout3 { background-color: #ede7f6 !important; border-color: #673ab7; }
-.layout4 { background-color: #f3e5f5 !important; border-color: #9c27b0; }
+.layout1 .kaart { background-color: #ffdde1 !important; border-color: #ff4d6d !important; }
+.layout2 .kaart { background-color: #bbdefb !important; border-color: #1976d2 !important; }
+.layout3 .kaart { background-color: #d1c4e9 !important; border-color: #673ab7 !important; }
+.layout4 .kaart { background-color: #f8bbd0 !important; border-color: #9c27b0 !important; }
+
 
 /* Achtergrondkleur voor het hele body-element */
 body.layout1 { background-color: #fff0f6 !important; }
