@@ -1,3 +1,4 @@
+
 body {
     text-align: center;
     background-color: #ffdde1;
@@ -138,6 +139,7 @@ body { margin: 0; overflow: hidden; }
 }
 
 
+
 @keyframes zweven {
     0% {
         transform: translateY(0);
@@ -150,11 +152,59 @@ body { margin: 0; overflow: hidden; }
 }
 
 
-
+p {
+    font-family: Arial, sans-serif;
+  }
+  
 
 
 @keyframes zweven {
     0% { transform: translateY(0) scale(1); opacity: 1; }
     100% { transform: translateY(-100vh) scale(1.5); opacity: 0; }
 }
+
+#tekst {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 600px; /* Ruimte tussen tekst en envelop */
+    margin-left: 70px; /* Zorgt ervoor dat het gecentreerd blijft */
+}
+
+#envelop {
+    width: 700px; /* Pas de grootte van de afbeelding aan */
+    cursor: pointer;
+    margin-left: -460px;
+}
+
+/* Voor kleine schermen (mobiel) */
+@media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  
+  /* Voor middelgrote schermen (tablets) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 80%;
+    }
+  }
+  
+  /* Voor grote schermen (desktops) */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+    .container {
+      width: 60%;
+    }
+  }
+  
+  
 
