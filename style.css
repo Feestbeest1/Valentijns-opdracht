@@ -35,10 +35,11 @@ body {
 .layout4 { background-color: #f3e5f5 !important; border-color: #9c27b0; }
 
 /* Achtergrondkleur voor het hele body-element */
-body.layout1 { background-color: #fff0f6; }
-body.layout2 { background-color: #e3f2fd; }
-body.layout3 { background-color: #ede7f6; }
-body.layout4 { background-color: #f3e5f5; }
+body.layout1 { background-color: #fff0f6 !important; }
+body.layout2 { background-color: #e3f2fd !important; }
+body.layout3 { background-color: #ede7f6 !important; }
+body.layout4 { background-color: #f3e5f5 !important; }
+
 
 
 

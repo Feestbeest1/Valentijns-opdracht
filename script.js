@@ -56,22 +56,28 @@ document.getElementById('fotoUpload').addEventListener('change', function(event)
 });
 
 function openKaart() {
-    audio.play();
-
     document.getElementById('beginscherm').style.display = 'none';
     document.getElementById('kaartContainer').style.display = 'block';
 }
 
 function veranderLayout() {
     var kaart = document.getElementById('kaart');
+    var kaarttop = document.querySelector('.kaarttop'); // Selecteer de bovenste brief
+    var body = document.body; // Selecteer het body-element
     var gekozenLayout = document.getElementById('layoutSelect').value;
     
     // Verwijder alle andere layout-klassen
     kaart.classList.remove("layout1", "layout2", "layout3", "layout4");
+    kaarttop.classList.remove("layout1", "layout2", "layout3", "layout4");
+    body.classList.remove("layout1", "layout2", "layout3", "layout4");
 
     // Voeg de nieuwe geselecteerde klasse toe
     kaart.classList.add(gekozenLayout);
+    kaarttop.classList.add(gekozenLayout);
+    body.classList.add(gekozenLayout);
 }
+
+
 
 var audio = new Audio('music.mp3'); // Vervang 'geluid.mp3' door je eigen bestand
 
