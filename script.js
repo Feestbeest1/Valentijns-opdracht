@@ -97,9 +97,13 @@ function updateHartAchtergrond() {
     // Pas de achtergrondkleur van het hart aan
     hartKnop.style.backgroundColor = achtergrondKleur;
 }
+
 document.getElementById('fotoUpload').addEventListener('change', function(event) {
     const file = event.target.files[0];
     if (file) {
+        // Verwijder de oude foto als die er is
+        verwijderFoto();
+        
         const reader = new FileReader();
         reader.onload = function(e) {
             const preview = document.getElementById('preview');
@@ -112,19 +116,19 @@ document.getElementById('fotoUpload').addEventListener('change', function(event)
         reader.readAsDataURL(file);
     }
 });
-
-// Functie om de foto te verwijderen
 function verwijderFoto() {
     const preview = document.getElementById('preview');
-    preview.src = '';  // Verwijder de foto
-    preview.style.display = 'none';  // Verberg de afbeelding
+    const fotoVerwijderKnop = document.getElementById('fotoVerwijderKnop');
     
-    // Verberg de verwijderknop
-    document.getElementById('fotoVerwijderKnop').style.display = 'none';
-
-    // Reset de file input zodat de gebruiker opnieuw een foto kan kiezen
-    document.getElementById('fotoUpload').value = '';
+    // Maak de afbeelding leeg
+    preview.src = '';
+    preview.style.display = 'none';
+    
+    // Verberg de foto-verwijderknop
+    fotoVerwijderKnop.style.display = 'none';
 }
+
+
 
 
 
